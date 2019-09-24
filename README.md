@@ -8,10 +8,10 @@ RPI Machines Map has a map legend that allows users to view regular campus locat
 This project was originally commissioned by Sam Chiappone (Director of Manufacturing Innovation) and Scott Yerbury (Electromechanical Technician/ Machine Shops Manager). It is now being developed and maintained through the Rensselaer Center for Open Source (RCOS).
 
 
-### Current Contributors:
+### Current/Past Contributors:
 * Justin Gaskins
-* Samuel Obe
 * Gabriel Wild
+* Samuel Obe
 * Hannah Lim
 * Ling Cheng
 * Chang Ju Kim
