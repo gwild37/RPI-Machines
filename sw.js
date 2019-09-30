@@ -35,10 +35,10 @@ self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request)
       .then(function (response) {
-        console.log("[PWA] add page to offline cache: " + response.url);
+        // console.log("[PWA] add page to offline cache: " + response.url);
 
         // If request was success, add or update it in the cache
-        event.waitUntil(updateCache(event.request, response.clone()));
+        // event.waitUntil(updateCache(event.request, response.clone()));
 
         return response;
       })
@@ -70,9 +70,9 @@ function fromCache(request) {
 }
 
 function updateCache(request, response) {
-  // return caches.open(CACHE).then(function (cache) {
-  //   return cache.put(request, response);
-  // });
+  return caches.open(CACHE).then(function (cache) {
+    return cache.put(request, response);
+  });
 }
 
 /*
