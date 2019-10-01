@@ -5,7 +5,8 @@ const CACHE = "offline-page";
 const precacheFiles = [
   "/public/images/logo.png",
   "/public/images/favicon.ico",
-  "/public/views/offline.html"
+  "/public/views/offline.html",
+  "/public/style/style.css"
 ];
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
@@ -34,18 +35,18 @@ self.addEventListener("fetch", function (event) {
 
   event.respondWith(
     fetch(event.request)
-      .then(function (response) {
-        // console.log("[PWA] add page to offline cache: " + response.url);
+    .then(function (response) {
+      // console.log("[PWA] add page to offline cache: " + response.url);
 
-        // If request was success, add or update it in the cache
-        // event.waitUntil(updateCache(event.request, response.clone()));
+      // If request was success, add or update it in the cache
+      // event.waitUntil(updateCache(event.request, response.clone()));
 
-        return response;
-      })
-      .catch(function (error) {
-        console.log("[PWA] Network request Failed. Serving content from cache: " + error);
-        return fromCache(event.request);
-      })
+      return response;
+    })
+    .catch(function (error) {
+      console.log("[PWA] Network request Failed. Serving content from cache: " + error);
+      return fromCache(event.request);
+    })
   );
 });
 

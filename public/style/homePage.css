@@ -1,0 +1,29 @@
+body {
+    background: url("/public/images/Forge.jpg") center center;
+    background-size: cover;
+}
+
+#Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75%;
+}
+
+h1 {
+    margin: 5%;
+}
+
+#Buttons button {
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid white;
+    padding: 7px 16px;
+    border-radius: 8px;
+}
+
+#Buttons button:hover {
+    background-color: white;
+    color: #dc3545;
+}
