@@ -27,7 +27,7 @@ a {
  * element that contains the map. */
 #mapContainer {
    font-size: small;
-   height: calc(100% - 8em);
+   height: calc(100% - 9em);
    width: 100%;
 }
 
