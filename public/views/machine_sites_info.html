@@ -107,7 +107,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Back to Map</a>
+            <a class="nav-link" href="/map">Back to Map</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/search?query=">Browse</a>
@@ -133,6 +133,12 @@
         <h2>{{name}}</h2>
         <p>{{nick}}</p>
         <p>{{desc}}</p>
+        
+        <a href="/map?loc={{id}}&machine={{isMachine}}" class="btn btn-light my-2 my-sm-0">Show On Map</a>
+        <!-- <form action="/index?loc={{id}}" method="get" class="form-inline my-2 my-lg-0">
+              <input id="showOnMapButton" ng-model="query" type="search" name="query" placeholder="Enter a location..." class="form-control mr-sm-2" aria-label="Show On Map">
+              <input id="searchButton" type="submit" value="Search" class="btn btn-light my-2 my-sm-0" ng-click="search(query);">
+            </form> -->
 
         <div id="machineInfo" ng-show="{{isMachine}}">
           <button class="collapsible">Shop Hours</button>
@@ -163,11 +169,6 @@
           </li>
         </div>
 
-        <a href="/public/views/map.html?loc={{id}}&machine={{isMachine}}" class="btn btn-light my-2 my-sm-0">Show On Map</a>
-        <!-- <form action="/index?loc={{id}}" method="get" class="form-inline my-2 my-lg-0">
-              <input id="showOnMapButton" ng-model="query" type="search" name="query" placeholder="Enter a location..." class="form-control mr-sm-2" aria-label="Show On Map">
-              <input id="searchButton" type="submit" value="Search" class="btn btn-light my-2 my-sm-0" ng-click="search(query);">
-            </form> -->
       </div>
 
       <div id="photos" class="col">

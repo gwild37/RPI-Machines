@@ -6,6 +6,7 @@ body {
 
 main {
   min-height: 81vh;
+  padding-bottom: 4em;
 }
 
 header {

@@ -7,7 +7,7 @@ app.controller('mapController', function($scope, $http) {
   $scope.isMachine = parameters.machine;
 
   if (parameters != null) {
-      $http.post(`/index?loc=${location}`, {query: location, machine: $scope.isMachine})
+      $http.post(`/map?loc=${location}`, {query: location, machine: $scope.isMachine})
       .then(function(httpResponse, err) {
       if (err) throw err;
       console.log(httpResponse.data);

@@ -24,7 +24,7 @@ Usage: setView([latitude, longitude], zoomlevel)
 
 let mymap = L.map('mapContainer', {
     center: [42.729453, -73.6802],
-    zoom: 16,
+    zoom: 25,
     layers: []
 })
 
@@ -194,4 +194,5 @@ let overlayMaps = {
 };
 
 // adding the layer groups in overlayMaps to the map (but it doesn't render yet)
-L.control.layers(null, overlayMaps).addTo(mymap);
+// L.control.layers(null, overlayMaps).addTo(mymap);
+machine_locations_layer.addTo(mymap);

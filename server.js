@@ -85,7 +85,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/views/index.html');
 })
 
-app.route('/index')
+app.route('/map')
 .get(function(req, res) {
   /*
   MongoClient.connect(uri, options, function(err, db) {
@@ -93,7 +93,7 @@ app.route('/index')
       throw err;
     }
     else {
-      console.log("Database connected in route '/index'!");
+      console.log("Database connected in route '/map'!");
       let dbo = db.db("locations");
     }
 
@@ -102,7 +102,7 @@ app.route('/index')
   console.log("here")
   */
 
-  res.sendFile(__dirname + '/public/views/index.html');
+  res.sendFile(__dirname + '/public/views/map.html');
   })
 .post(jsonParser, function(req, res) {
   //get the location to highlight
@@ -116,7 +116,7 @@ app.route('/index')
     if (err)
       throw err;
     else {
-      console.log("Database connected in route '/index'!")
+      console.log("Database connected in route '/map'!")
 
       let dbo = db.db("rpicampusmap");
 
