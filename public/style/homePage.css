@@ -8,7 +8,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 75%;
+    height: 80vh;
+}
+
+.zammad-chat-is-shown {
+    max-height: calc(100% - 4em)
 }
 
 h1 {

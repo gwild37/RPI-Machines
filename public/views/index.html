@@ -79,14 +79,29 @@
           Machine Shops
         </button>
       </a>
-      </h01>
+    </h1>
+    <h1>
+      <button class="open-zammad-chat">Chat with us</button>
+
+      <script src="http://localhost:3010/assets/chat/chat.min.js"></script>
+      <script>
+        $(function () {
+          new ZammadChat({
+            background: '#ee7467',
+            chatId: 1,
+            show: false
+          });
+        });
+      </script>
+
+    </h1>
   </div>
 
   <!-- footer -->
   <footer class="container-fluid py-2 bg-danger align-items-center">
     <div id="seal">
       <a href="https://rpi.edu/" target="_blank">
-          <img id="seal" src="/public/images/seal.png" width=50 height=50 alt="Rensselaer Polytechnic Institute"/>
+        <img id="seal" src="/public/images/seal.png" width=50 height=50 alt="Rensselaer Polytechnic Institute" />
       </a>
     </div>
     <div class="row justify-content-center">
@@ -95,7 +110,6 @@
         <a href="https://github.com/gaskij/rpicampusmap"><i class="fab fa-github"></i> GitHub</a> --
         <br><a href="/admin">Admin Panel</a>
       </div>
-    </div>
   </footer>
 
   <!-- Bootstrap Scripts -->
