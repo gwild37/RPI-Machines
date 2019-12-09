@@ -37,7 +37,7 @@
   <!-- Header -->
   <header id="header">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/">
         <img id="logo" src="/public/images/logo.png" height=40px alt="RPI Campus Map" />
       </a>
@@ -60,7 +60,7 @@
         <form action="/search" method="get" class="form-inline my-2 my-lg-0">
           <input id="searchText" type="search" name="query" placeholder="Enter a location..."
             class="form-control mr-sm-2" aria-label="Search">
-          <input id="searchButton" type="submit" value="Search" class="btn btn-light my-2 my-sm-0">
+          <input id="searchButton" type="submit" value="Search" class="btn btn-danger my-2 my-sm-0">
         </form>
       </div>
     </nav>
@@ -68,22 +68,22 @@
   <div id="Buttons">
     <h1>
       <a href="/map">
-        <button type="button">
+        <button type="button" class="btn-lg btn-outline-danger">
           Map
         </button>
       </a>
     </h1>
     <h1>
       <a href="/search?query=">
-        <button type="button">
+        <button type="button" class="btn-lg btn-outline-danger">
           Machine Shops
         </button>
       </a>
     </h1>
     <h1>
-      <button class="open-zammad-chat">Chat with us</button>
+      <button class="open-zammad-chat btn-lg btn-outline-danger">Chat with us</button>
 
-      <script src="http://localhost:3010/assets/chat/chat.min.js"></script>
+<!--       <script src="http://localhost:3010/assets/chat/chat.min.js"></script>
       <script>
         $(function () {
           new ZammadChat({
@@ -92,13 +92,13 @@
             show: false
           });
         });
-      </script>
+      </script> -->
 
     </h1>
   </div>
 
   <!-- footer -->
-  <footer class="container-fluid py-2 bg-danger align-items-center">
+  <footer class="container-fluid py-2 bg-light align-items-center">
     <div id="seal">
       <a href="https://rpi.edu/" target="_blank">
         <img id="seal" src="/public/images/seal.png" width=50 height=50 alt="Rensselaer Polytechnic Institute" />
