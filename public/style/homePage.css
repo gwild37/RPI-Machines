@@ -20,18 +20,5 @@ h1 {
 }
 
 #Buttons button {
-<<<<<<< HEAD
     font-size: xx-large;
-=======
-    background-color: white;
-    color: #dc3545;
-    border: 2px solid #dc3545;
-    padding: 7px 16px;
-    border-radius: 8px;
-}
-
-#Buttons button:hover {
-    color: white;
-    background-color: #dc3545;
->>>>>>> 4ad6adbd8bd5f52088d08af323a335cf234ea5be
 }
