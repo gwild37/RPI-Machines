@@ -1,4 +1,4 @@
-# RPI Machines Map #
+# RPI Machines #
 
 
 This is a webapp that will allow users to easily find machine shops on campus, and the contents of those shops. This project exists as a branch of [RPI Interactive Campus Map](CM_README.md).
@@ -19,6 +19,7 @@ This project was originally commissioned by Sam Chiappone (Director of Manufactu
 
 ### Version History:
 * 7/29/2019 - Stable version of Machines Map on the forgemill branch. Map has basic preliminary functions including map legend, searchable machines, and machine shops in database.
+* 12/10/2019 - Stable, mobile friendly version of renamed RPI Machines web app. Has homepage and zammad integration for live chat. 
 
 ### Getting Started
 This project uses the MEAN stack (MongoDB, Express.JS, AngularJS 1.7, Node.js). You will need a working installation of [Node.js](https://nodejs.org/en/) (LTS version recommended), and a [MongoDB Atlas Cloud account](https://www.mongodb.com/cloud/atlas) (free is fine).
@@ -29,6 +30,9 @@ Once you have that taken care of, there are a few more steps before you can begi
 3. Run `npm install` to download the required Node packages.
 4. Open the ".envTEMPLATE" file in your preferred text editor. Change the <username> and <password> fields to match your Mongo Atlas account information. Don't worry, this file will only be saved on your local machine, so nobody will see it! Save the file as ".env"
 5. Run `git status` to make sure you are up to date with the current branch. If so, you can begin!
+
+### Installing Zammad locally
+[Here](https://docs.zammad.org/en/latest/install-ubuntu.html) are the instructions for installing Zammad on Ubuntu via DEB which is the recommended way to do so. After installation, and making an account, turn on live chat, and copy the IP address of the Zammad installation into the Zammad button on the index.html page in views. 
 
 ### Running the Server
 To start the server, run `npm start` to have the server auto-restart if you make any changes, or `node server.js` if you would rather manually restart in case of changes.
